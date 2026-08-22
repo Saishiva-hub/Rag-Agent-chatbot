@@ -1,1 +1,50 @@
 
+# RAG Document Chatbot
+
+## Overview
+
+This project implements a Retrieval-Augmented Generation (RAG)
+application using LangChain, Google Gemini, Google embeddings,
+and Chroma vector store.
+
+## Technologies
+
+- Python
+- LangChain
+- Google Gemini
+- Google Generative AI Embeddings
+- Chroma
+- Jupyter/Google Colab
+
+## Architecture
+
+Documents
+→ Text Splitting
+→ Embeddings
+→ Chroma
+→ Retrieval
+→ Gemini
+→ Answer
+
+## Workflow
+
+1. Load documents
+2. Split documents into chunks
+3. Generate embeddings
+4. Store embeddings in Chroma
+5. Retrieve relevant documents
+6. Send retrieved context to Gemini
+7. Generate the final answer
+
+## How to Run
+
+Open the notebook in Google Colab.
+
+Add your Google API key securely using
+environment variables or Colab Secrets.
+
+Install the required packages:
+
+pip install -r requirements.txt
+
+Then run the notebook cells.
